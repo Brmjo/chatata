@@ -99,7 +99,12 @@ app.post('/signup', (req, res) => {
     const usersDB = new LowSync(adapter);
     
     usersDB.read();
-    usersDB.data.users.push({ username, password });
+    usersDB.data.users.push({ 
+        username, 
+        password,
+        profilePicture: "/images/default-profile-picture.jpeg",
+        role: "user"
+    });
     usersDB.write();
     res.json({ status: 'OK', message: 'Successfully created account' });
 });
