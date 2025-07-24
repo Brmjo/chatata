@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "John",
+      "password": "JohnTheDev",
+      "profilePicture": "/images/profile-pictures/default-profile-picture.jpeg",
+      "role": "user"
+    },
+    {
+      "username": "John2",
+      "password": "Hehe",
+      "profilePicture": "/images/profile-pictures/default-profile-picture.jpeg",
+      "role": "user"
+    },
+    {
+      "username": "Jsjs",
+      "password": "123",
+      "profilePicture": "/images/profile-pictures/default-profile-picture.jpeg",
+      "role": "user"
+    }
+  ]
+}

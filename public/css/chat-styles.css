@@ -1,0 +1,133 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #F9F9FC;
+    color: #333344;
+    font-family: Sans-Serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 50px;
+    background-color: #7E57C2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+nav > h1 {
+    color: black;
+    font-family: 'Cursive';
+    font-weight: bold;
+    font-size: 2em;
+}
+
+nav > #profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav > #profile > #profile-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+nav > #profile > #username {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+nav > svg {
+    width: 30px;
+}
+
+main {
+    height: calc(100% - 50px);
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#chats-wrapper {
+    
+}
+
+#search-friends-wrapper {
+    display: none;
+    background-color: #F9F9FC;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 5px;
+}
+
+#search-friends-wrapper > h2{
+    font-size: 1.5em;
+}
+
+#search-bar-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#search-bar-wrapper > input {
+    width: 80%;
+    aspect-ratio: 1 / 0.15;
+    border: 1px solid #7E57C2;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#search-bar-wrapper > svg {
+    width: 30px;
+    height: 30px;
+}
+
+#list-of-users {
+    width: 95%;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+}
+
+#list-of-users .user-wrapper {
+    width: 100%;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    align-items: center;
+}
+
+/*.user-wrapper * {
+    border: 1px solid red;
+}*/
+
+.user-wrapper > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.user-wrapper > .username {
+    font-size: 1.2em;
+}
+
+.user-wrapper > button {
+    width: 100%;
+    border: 1px solid black;
+    aspect-ratio: 1 / 0.3;
+    border-radius: 5px;
+    background-color: #E0E0F0;
+}
