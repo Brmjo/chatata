@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "username": "John",
+      "username": "John(DEV)",
       "password": "JohnTheDev",
       "profilePicture": "/images/profile-pictures/default-profile-picture.jpeg",
-      "role": "user"
+      "role": "admin"
     },
     {
       "username": "John2",

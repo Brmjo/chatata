@@ -40,7 +40,9 @@ function displayUsersList(list) {
         userWrapper.appendChild(profilePicture);
         userWrapper.appendChild(username);
         userWrapper.appendChild(startChatButton);
-        userWrapper.classList.add('user-wrapper')
+        userWrapper.classList.add('user-wrapper');
+        
+        if(user.role == 'admin') username.classList.add('rainbow-text')
         
         listOfUsersWrapper.appendChild(userWrapper);
     }

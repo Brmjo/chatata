@@ -119,7 +119,8 @@ app.get('/list-of-users', authentication, (req, res) => {
     for(user of usersDB.data.users) {
         users.push({
             username: user.username,
-            profilePicture: user.profilePicture
+            profilePicture: user.profilePicture,
+            role: user.role
         });
     }
     
